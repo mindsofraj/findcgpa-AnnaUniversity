@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800;900&family=Rowdies&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+::selection {
+  background-color: #fda82c;
+  color: rgb(46, 30, 0);
+}
+
+/* Preloader */
+#loading {
+  position: fixed;
+  width: 100%;
+  min-height: 100%;
+  background: #151515 url("../images/preloader\ 3.gif") no-repeat center;
+  z-index: 100000;
+  pointer-events: auto;
+  user-select: none;
+}
+
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-image: linear-gradient(#111113, #323232);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fd962f;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #ec7905;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: linear-gradient(#111113, #323232);
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  max-width: 100%;
+  margin: 3em 0 2em;
+  text-align: center;
+  user-select: none;
+}
+
+.courseDetails {
+  color: #b3b3b3;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  font-family: "poppins", "Montserrat", sans-serif;
+  font-size: 0.9em;
+}
+
+.universityName {
+  color: white;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "poppins", sans-serif;
+  letter-spacing: 1px;
+}
+
+.mainHeading {
+  background-image: -webkit-linear-gradient(#f8a145, #f07900);
+  color: rgb(247, 247, 247);
+  font-size: 2.9rem;
+  padding: 10px 0;
+  font-weight: 800;
+  line-height: 1em;
+  margin-bottom: 10px;
+  font-family: "poppins", sans-serif;
+}
+
+/* Removing Spinners from Number Input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+/* Changing the Browser Selection Color */
+
+input[type="number"] {
+  outline: none;
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  text-align: center;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input:focus {
+  color: #ffb950;
+}
+
+select {
+  outline: none;
+  min-width: 50%;
+  height: 30px;
+  border-radius: 5px;
+  padding-left: 10px;
+  background-color: #3c3c3c;
+  color: rgb(255, 255, 255);
+  border: none;
+  text-align: left;
+  cursor: pointer;
+}
+
+select:focus {
+  color: #fda82c;
+  background: rgb(20, 20, 20);
+  font-weight: 600;
+}
+
+option:hover {
+  box-shadow: 0 0 10px 100px #ffc400 inset;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tableBar {
+  background-color: #3c3c3c;
+  width: 100%;
+  position: sticky;
+  top: 0;
+}
+
+th.practicals-break {
+  color: #eee;
+  font-size: 1rem;
+  font-weight: 8001;
+  background-image: -webkit-linear-gradient(rgb(131, 131, 131),
+      rgb(68, 68, 68));
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 10px;
+}
+
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 10px;
+}
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+thead th:nth-child(1) {
+  width: 50%;
+}
+
+thead th:nth-child(2) {
+  width: 20%;
+}
+
+thead th:nth-child(3) {
+  width: 20%;
+}
+
+th {
+  color: rgb(251, 251, 251);
+  font-weight: 700;
+  font-size: 1.21em;
+  letter-spacing: 1px;
+  padding: 15px 20px;
+  text-align: left;
+}
+
+td {
+  color: #eee;
+  padding: 20px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.2em;
+}
+
+/* td::first-letter {
+  color: #9d9d9d;
+} */
+tbody tr:nth-child(odd) {
+  background-color: #1b1b1b;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #111113;
+}
+
+.result {
+  color: rgb(254, 255, 208);
+  margin: 20px 0 0 0;
+  background-color: rgba(31, 31, 31, 0.5);
+  padding: 5px 20px;
+  border-radius: 6px;
+  letter-spacing: 0.05rem;
+}
+
+/* Button Styling */
+.button {
+  align-items: center;
+  background-clip: padding-box;
+  background-color: #ff8d23;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-family: "poppins", sans-serif;
+  display: inline-flex;
+  font-size: 15px;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.25;
+  margin: 20px;
+  min-height: 2rem;
+  padding: calc(0.75rem - 1px) calc(1.9rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button:hover,
+.button:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.button:hover {
+  transform: translateY(-1px);
+}
+
+.button:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.resultDialogBox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 300px;
+  height: auto;
+  padding: 30px 50px;
+  text-align: center;
+  box-shadow: 0 5px 30px rgba(100, 100, 100, 0.3);
+  background: #1111132f;
+  color: rgb(255, 255, 240);
+  font-family: "poppins";
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.01rem;
+  z-index: 100;
+  cursor: default;
+  border-radius: 1rem;
+  backdrop-filter: blur(3rem);
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transition: 0.3s;
+}
+
+.resultDialogBox.active {
+  pointer-events: all;
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.resultDialogBox img {
+  border-radius: 0.9rem;
+}
+
+.crossIcon {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.crossIcon:hover {
+  transform: rotate(90deg);
+  text-decoration: none;
+  user-select: none;
+  transition: 0.3s;
+}
+
+.blur {
+  filter: blur(10px);
+  pointer-events: none;
+  user-select: none;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 490px) {
+  table {
+    width: 100%;
+  }
+
+  th {
+    font-size: 1.09rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .mainHeading {
+    font-size: 2.5rem;
+    font-weight: 800;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  td {
+    font-weight: 600;
+    font-size: 1.09em;
+  }
+
+  thead th:nth-child(1) {
+    width: 50%;
+  }
+
+  thead th:nth-child(2) {
+    width: 25%;
+  }
+
+  thead th:nth-child(3) {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .mainHeading {
+    font-size: 2.3rem;
+  }
+}

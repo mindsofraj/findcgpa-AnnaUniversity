@@ -1,0 +1,252 @@
+<%- include('../partials/header'); -%>
+
+<header>
+  <h1 class="mainHeading">GPA CALCULATOR</h1>
+  <h3 class="universityName">ANNA UNIVERSITY 2017 REGULATION</h3>
+  <h4 class="courseDetails">Dept:CSE Sem:5</h4>
+</header>
+<form action="/cse-sem5" method="post">
+  <div class="container">
+    <table>
+      <thead class="tableBar">
+        <tr>
+          <th>SUBJECTS</th>
+          <th>CREDITS</th>
+          <th>GRADE</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 Algebra and Number Theory - MA8551</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="4"
+              name="credit1"
+              id="creditSub1"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade1" id="gradeSub1">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>2 Computer Networks - CS8591</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="3"
+              name="credit2"
+              id="creditSub2"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade2" id="gradeSub2">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>3 Microprocessors and Microcontrollers - EC8691</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="3"
+              name="credit3"
+              id="creditSub3"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade3" id="gradeSub3">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>4 Theory of Computation - CS8501</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="3"
+              name="credit4"
+              id="creditSub4"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade4" id="gradeSub4">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>5 Object Oriented Analysis and Design - CS8592</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="3"
+              name="credit5"
+              id="creditSub5"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade5" id="gradeSub5">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>6 Open Elective I</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="3"
+              name="credit6"
+              id="creditSub6"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade6" id="gradeSub6">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+
+        <!-- Practicals Break -->
+        <tr>
+          <th class="practicals-break">PRACTICAL SUBJECTS</th>
+          <th class="practicals-break">CREDITS</th>
+          <th class="practicals-break">GRADE</th>
+        </tr>
+
+        <tr>
+          <td>7 Microprocessors and Microcontrollers Laboratory - EC8681</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="2"
+              name="credit7"
+              id="creditSub7"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade7" id="gradeSub7">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>8 Object Oriented Analysis & Design Lab - CS8582</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="2"
+              name="credit8"
+              id="creditSub8"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade8" id="gradeSub8">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>9 Networks Laboratory - CS8581</td>
+          <td>
+            <input
+              type="number"
+              required
+              value="2"
+              name="credit9"
+              id="creditSub9"
+              min="1"
+              max="4"
+            />
+          </td>
+          <td>
+            <select name="grade9" id="gradeSub9">
+              <option value="O">O</option>
+              <option value="A+">A+</option>
+              <option value="A">A</option>
+              <option value="B+">B+</option>
+              <option value="B">B</option>
+              <option value="U">U</option>
+            </select>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="calculateGpaButton">
+      <button class="button" name="calculate">CALCULATE GPA</button>
+    </div>
+  </div>
+</form>
+
+<%- include("../partials/footer"); -%>

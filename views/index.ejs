@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>findCGPA.com || Anna University Online CGPA Calculator 2017 Regualtion</title>
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png">
+  </head>
+  <body onload="stopLoading()" class="is-preload">
+    <div id="loading"></div>
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+          <h1 id="title">findCGPA.com</h1>
+          <p>Anna University 2017 Regulation</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#top" id="top-link"
+                ><span class="icon solid fa-home">Intro</span></a
+              >
+            </li>
+            <li>
+              <a href="#calculateGpa" id="portfolio-link"
+                ><span class="icon solid fa-th">Calculate GPA</span></a
+              >
+            </li>
+            <li>
+              <a href="#calculateCgpa" id="contact-link"
+                ><span class="icon solid fa-th">Calculate CGPA</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contact-link"
+                ><span class="icon solid fa-envelope">Contact Us</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="explanation">
+        <h1>What is GPA?</h1>
+        <p>
+          Grade Point Average (GPA) is the sum of all your course grades of the
+          semester, divided by the total number of credits.
+        </p>
+        <h1>What is CGPA?</h1>
+        <p>
+          Cumulative Grade Point Average (CGPA) is calculated by dividing the
+          sum of the grade points earned by the total credit value of courses
+          you have attempted.
+        </p>
+      </div>
+
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li>
+            <a
+              href="https://youtube.com/c/mindsofraj"
+              class="icon brands fa-youtube"
+              target="_blank"
+              ><span class="label">YouTube</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/minds_of_raj/"
+              class="icon brands fa-instagram"
+              target="_blank"
+              ><span class="label">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://twitter.com/mindsofraj"
+              class="icon brands fa-twitter"
+              target="_blank"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Intro -->
+      <section id="top" class="one dark cover">
+        <div class="container">
+          <header>
+            <h2 class="alt">
+              <strong
+                ><a
+                  class="mainText"
+                  href="https://www.annauniv.edu"
+                  target="_blank"
+                  >Anna University</a
+                ></strong
+              >
+            </h2>
+            <p>
+              Online CGPA Calculator 2017 Regualtion for Anna University Students with 100%
+              Accuracy.
+            </p>
+          </header>
+
+          <a
+            href="https://coe1.annauniv.edu/home/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="outlineBtn"
+            >Check Results</a
+          >
+          <footer>
+            <a href="#calculateGpa" class="button scrolly">Calculate GPA</a>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Calculate GPA -->
+      <section id="calculateGpa" class="two">
+        <div class="container">
+          <header>
+            <h2>Calculate GPA</h2>
+          </header>
+
+          <p class="info">
+            <em
+              >If your department is not available in the list, then please
+              contact us to update.</em
+            >
+          </p>
+
+          <div class="row">
+            <form action="/" method="post">
+              <div class="col-12">
+                <article class="item">
+                  <label for="department">Choose Your Department</label><br />
+                  <select name="department" id="department" required>
+                    <option value="computerScience">
+                      Computer Science Engineering
+                    </option>
+                    <option value="mechanical">Mechanical Engineering</option>
+                    <option value="electrical">Electrical And Electronics Engineering</option>
+                    <option value="electronicsAndCommunication">
+                      Electronics And Communication Engineering
+                    </option>
+                    <option value="civil">Civil Engineering</option>
+                  </select>
+                </article>
+                <article class="item">
+                  <label for="semester">Choose Your Semester</label><br />
+                  <select name="semester" id="semester" required>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                  </select>
+                </article>
+              </div>
+              <br />
+              <div class="col-12">
+                <input class="myButton" type="submit" value="Let's GO!" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Calculate CGPA -->
+      <section id="calculateCgpa" class="three">
+        <div class="container">
+          <header>
+            <h2>CGPA Calculator</h2>
+          </header>
+          <form action="#">
+            <div class="col-12">
+              <article class="item">
+                <label for="semCompleted"
+                  >Please, Choose number of semester's you have completed till
+                  now</label
+                ><br />
+                <div class="myContainer">
+                  <select
+                    name="semCompleted"
+                    id="semCompleted"
+                    required
+                    oninvalid="this.setCustomValidity('Please Select Semester Nanba')"
+                    oninput="this.setCustomValidity('')"
+                  >
+                    <option value="" selected disabled hidden>
+                      Semesters Completed
+                    </option>
+                    <option value="1">Semester 1</option>
+                    <option value="2">Semester 2</option>
+                    <option value="3">Semester 3</option>
+                    <option value="4">Semester 4</option>
+                    <option value="5">Semester 5</option>
+                    <option value="6">Semester 6</option>
+                    <option value="7">Semester 7</option>
+                    <option value="8">Semester 8</option>
+                  </select>
+                  <!-- Go Button -->
+                  <button type="submit" id="semCompletedBtn">GO!</button>
+                </div>
+              </article>
+            </form>
+            <form action="#">
+              <!-- Dynamic List Container -->
+              <div class="semListContainer">
+                <div class="col-12-mobile" id="semList"></div>
+              </div>
+              <input
+                class="myButton cgpaCalcBtn"
+                id="cgpaBtn"
+                type="submit"
+                value="CALCULATE"
+              />
+            </form>
+              <!-- Result Box -->
+              <div id="resultView">
+                <label id="resultLabel" for="inputResultView"
+                  >Your CGPA is</label
+                >
+                <input id="result" class="resultBox" type="text" readonly />
+              </div>
+            </div>
+ 
+        </div>
+      </section>
+      
+    <!-- Contact -->
+    <section id="contact" class="four">
+      <div class="container">
+        <header>
+          <h2>Contact Us</h2>
+        </header>
+
+        <p>We can't solve your problem if you don't tell us about it!<br>So, How Can We Help You?</p>
+
+        <form method="post" action="/" class="contact-form">
+          <div class="row">
+            <div class="col-6 col-12-mobile"><input type="text" id="formName" name="name" required placeholder="Name" /></div>
+            <div class="col-6 col-12-mobile"><input type="email" id="formEmail" name="email" required placeholder="Email" /></div>
+            <div class="col-12">
+              <textarea name="message" id="formMessage" required placeholder="Message"></textarea>
+            </div>
+            <div class="col-12" id="msgSentInfo">
+              <img class="dotAnimation" src="../assets/images/dotAnimation.svg" alt="">
+              <p class="msgSent">Your Message Sent Successfully!</p>
+              <p class="msgNotSent">Sorry, Something Went Wrong!</p>
+            </div>
+            <div class="col-12">
+              <input type="submit" id="formSubmitBtn" class="myButton" value="Send Message" />
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+  </div>
+    <!-- Footer -->
+    <div id="footer">
+      <!-- Copyright -->
+      <ul class="copyright">
+        <li>
+          <a href="https://www.youtube.com/mindsofraj" target="_blank"
+            >&copy;Minds Of Raj</a
+          >. All rights reserved.
+        </li>
+      </ul>
+       <!-- Social Icons -->
+       <ul class="icons">
+        <li>
+          <a
+          href="https://youtube.com/c/mindsofraj"
+          class="icon brands fa-youtube"
+          target="_blank"
+          ><span class="label">YouTube</span></a
+        >
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/minds_of_raj/"
+            class="icon brands fa-instagram"
+            target="_blank"
+            ><span class="label">Instagram</span></a
+          >
+        </li>
+        <li>
+          <a
+          href="https://twitter.com/mindsofraj"
+          class="icon brands fa-twitter"
+          target="_blank"
+          ><span class="label">Twitter</span></a
+        >
+        </li>
+        
+      </ul>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cgpaCalculator.js"></script>
+    <script src="assets/js/contact.js"></script>
+    <script>
+      const preloader = document.getElementById("loading");
+
+      function stopLoading() {
+        preloader.style.display = "none";
+      }
+    </script>
+  </body>
+</html>
